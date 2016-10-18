@@ -1,0 +1,10 @@
+%im2gray scripti
+
+I=imread('Lighthouse.jpg');
+
+[M N K]=size(I);
+
+ave_grayval=zeros(M,N);
+temp=zeros(M,N);
+ave_grayval=(I(:,:,1)+I(:,:,2)+I(:,:,3);
+

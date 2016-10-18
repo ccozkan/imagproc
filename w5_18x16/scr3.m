@@ -1,0 +1,33 @@
+I=imread('Lighthouse.jpg');
+% I=im2double(I);
+[M N K]=size(I);
+
+Ied=zeros(M,N,K);
+Ied(:,:,1)=zeros(M,N);
+Ied(:,:,2)=zeros(M,N);
+Ied(:,:,3)=I(:,:,3);
+
+Ied2=I;
+% for i=1:M
+%     for i=1:N
+%     if I(i,j,3)>=5
+%         Ied2(i,j,3)=0;
+%     end
+%     end
+% end
+
+for i=1:1:M
+    for j=1:1:N
+    if I(i,j,1)>170  && I(i,j,2)<190 
+        
+        I(i,j,:)=0;
+    else
+    end
+        
+
+             
+        
+    end
+    
+    end
+imshow(I);
