@@ -1,0 +1,14 @@
+clc
+clear all
+
+sig=.5;
+
+for i=1:S
+    for j=1:S
+        G(i,j)=(2*pi*sig^2)^(-1)*exp(-(i^2+j^2)/(2*sig^2));
+    end
+end
+
+for i=
+[X Y]=meshgrid(-1:2:1, -1:2:1);
+

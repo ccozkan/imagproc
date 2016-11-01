@@ -1,0 +1,7 @@
+
+
+I=im2double(rgb2gray(imread('Penguins.jpg')));
+[M N]=size(I);
+
+is=sign(I(M/2,N/2));
+Isharp=I+conv2(I,diff(I),'same')*is;
