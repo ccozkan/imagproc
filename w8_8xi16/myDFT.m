@@ -1,0 +1,14 @@
+function [ output ] = myDFT( x_n )
+
+N=length(x_n);
+output=zeros(size(x_n));
+
+for K=0:1:N-1
+    x_k=0;
+    for n=0:1:N-1
+        x_k=x_k+x_n(n+1)*exp(-2*i*pi*n*K/n);
+    end
+    output(K+1)=x_k
+
+end
+
