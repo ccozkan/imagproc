@@ -12,7 +12,7 @@ imshow([BW1 BW2]);
 %%
 %hstgrm 
 
-I=imread('Desert.jpg');
+I=imread('Penguins.jpg');
 I=rgb2gray(I);
 
 [M N]=size(I);
