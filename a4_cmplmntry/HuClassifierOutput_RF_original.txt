@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     HU
+Instances:    150
+Attributes:   8
+              hu1
+              hu2
+              hu3
+              hu4
+              hu5
+              hu6
+              hu7
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.34 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          78               52      %
+Incorrectly Classified Instances        72               48      %
+Kappa statistic                          0.4667
+Mean absolute error                      0.1261
+Root mean squared error                  0.2503
+Relative absolute error                 69.9403 %
+Root relative squared error             83.3072 %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.867    0.037    0.722      0.867    0.788      0.766    0.992     0.942     0
+                 0.467    0.037    0.583      0.467    0.519      0.475    0.821     0.585     1
+                 0.400    0.044    0.500      0.400    0.444      0.393    0.856     0.443     2
+                 0.400    0.074    0.375      0.400    0.387      0.317    0.821     0.316     3
+                 0.667    0.081    0.476      0.667    0.556      0.506    0.901     0.669     4
+                 0.533    0.037    0.615      0.533    0.571      0.529    0.876     0.696     5
+                 0.400    0.030    0.600      0.400    0.480      0.445    0.872     0.439     6
+                 0.533    0.037    0.615      0.533    0.571      0.529    0.935     0.597     7
+                 0.267    0.074    0.286      0.267    0.276      0.199    0.802     0.314     8
+                 0.667    0.081    0.476      0.667    0.556      0.506    0.831     0.342     9
+Weighted Avg.    0.520    0.053    0.525      0.520    0.515      0.467    0.871     0.534     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j   <-- classified as
+ 13  0  0  0  0  0  0  0  2  0 |  a = 0
+  0  7  0  3  1  0  0  1  1  2 |  b = 1
+  0  1  6  3  3  0  0  0  1  1 |  c = 2
+  0  1  1  6  1  1  1  0  3  1 |  d = 3
+  0  1  2  1 10  0  0  0  1  0 |  e = 4
+  0  1  0  2  0  8  0  2  2  0 |  f = 5
+  1  0  0  0  2  0  6  1  0  5 |  g = 6
+  0  1  0  0  1  2  1  8  0  2 |  h = 7
+  3  0  3  1  3  1  0  0  4  0 |  i = 8
+  1  0  0  0  0  1  2  1  0 10 |  j = 9
+
